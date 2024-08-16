@@ -82,5 +82,54 @@
   rep5
   
   # 7 7 7 7 2 2 2 8 1 1 1 1 1
-  repq6 <- rep(c(7, 2, 8, 1), times = c(4, 3, 1, 5))
+  rep6 <- rep(c(7, 2, 8, 1), times = c(4, 3, 1, 5))
   rep6
+
+# 12. Sorting
+  height_sorted = sort(height)
+  height_sortedDown = sort(height, decreasing = TRUE)
+  
+# 13,14,15. Child naming, weight, height
+  # 13. Creating the name vector
+  child_name = c("Alfred", "Barbara", "James", "Jane", "John", "Judy", "Louise", "Mary", "Ronald", "William")
+  
+  # 14. Order the names by height from shortest to tallest
+  names_sort <- child_name[order(height)]
+  names_sort
+  
+  # Shortest child
+  shortest_child <- names_sort[1]
+  shortest_child
+  
+  # Tallest child
+  tallest_child <- names_sort[length(names_sort)]
+  tallest_child
+  
+  # 15. Order the names by descending weight
+  weight_rev <- child_name[order(-weight)]
+  weight_rev
+  
+  # Heaviest child
+  heaviest_child <- weight_rev[1]
+  heaviest_child
+  
+  # Lightest child
+  lightest_child <- weight_rev[length(weight_rev)]
+  lightest_child
+  
+# 16. Missing data ('NA')
+  mydata = c(2, 4, 1, 6, 8, 5, NA, 4, 7)
+  mean(mydata)
+  mean(mydata, na.rm = TRUE) # ignores all NA values in mydata vector
+  
+# 17. List/rm seq1
+  
+  print("This is the end. ")
+  
+  # lists all variables used:
+  print(ls())
+  
+  # removing seq1
+  rm(seq1)
+  
+  print("Exercise 2 Complete")
