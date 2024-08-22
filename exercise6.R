@@ -57,7 +57,7 @@ generate_data_analysis()
 
 # 4. Write a function to calculate the median of a vector manually.
 # The function finds the median of a vector, handling both odd and even-sized vectors.
-manual_median <- function(x) {
+median_func <- function(x) {
   x <- sort(x)
   n <- length(x)
   
@@ -77,8 +77,8 @@ manual_median <- function(x) {
 odd_vector <- c(1, 3, 5, 7, 9)
 even_vector <- c(2, 4, 6, 8, 10, 12)
 
-odd_median <- manual_median(odd_vector)
-even_median <- manual_median(even_vector)
+odd_median <- median_func(odd_vector)
+even_median <- median_func(even_vector)
 
 print(paste("Manual Median of odd vector:", odd_median))
 print(paste("Manual Median of even vector:", even_median))
